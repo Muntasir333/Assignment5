@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- daisy ui + tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section>
+        <div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content">
+    <div class="card bg-base-100 w-[520px] h-[743px] shrink-0 shadow-2xl">
+      <div class="card-body space-y-3">
+         <div class="flex flex-col items-center">
+        <img src="./assets/github-logo.png">
+        <h2 class="font-semibold text-2xl">Github Issue Tracker</h2>
+        <p class="font-normal text-[16px] text-[#64748B]">Sign in to manage your issues</p>
+    </div>
+        <fieldset class="fieldset">
+          <label class="label">Username</label>
+          <input id="user" type="text" class="input w-full" placeholder="Enter Username" />
+          <h1 class="text-[#4A00FF]">Default:admin</h1>
+          <label class="label">Password</label>
+          <input id="pass" type="password" class="input w-full" placeholder="Enter Password" />
+          <h1 class="text-[#4A00FF]">Default:admin123</h1>
+          <button id="button" class="btn btn-primary mt-4">Login</button>
+          <div class="flex items-center gap-4 mt-6">
+            <hr style="flex:1"><span>OR</span><hr style="flex:1">
+          </div>
+          <div class="text-center">
+            <h2 class="font-normal text-[16px] text-[#64748B] mt-6">Demo Credentials:</h2>
+            <div class="bg-[#F8FAFC] h-[90px] flex justify-center flex-col">
+                <h2><span class="font-bold">Username:</span> admin</h2>
+                <h2><span class="font-bold">
+Password:</span> admin123</h2>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./function.js"></script>
+</body>
+</html>
