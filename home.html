@@ -78,26 +78,41 @@
 
 
 
-<section>
-    <h2>Title</h2>
-    <div class="flex gap-3 items-center">
+<div class="w-[700px] h-[415px] bg-white p-8">
+    <h2 class="font-semibold text-2xl">Title</h2>
+    <div class="flex gap-3 items-center font-normal text-[12px] text-[#64748B] mt-2 mb-6">
         <h1>Opened <h1><img src="./assets/Ellipse 5.png"></h1>
         <h1>Opened by <h1><img src="./assets/Ellipse 5.png"></h1>
         <h1>Date </h1>
     </div>
-    <div>status</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, consequuntur.</p>
-    <div class="grid grid-cols-2">
+    <div class="mb-6">status</div>
+    <p class="font-normal text-[16px] text-[#64748B] mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, consequuntur.</p>
+    <div class="grid grid-cols-2 items-center bg-[#F8FAFC] w-[636px] h-[81px] p-4">
         <div>
-            <h1>Assignee:</h1>
-            <h2>Fahim</h2>
+            <h1 class="font-normal text-[16px] text-[#64748B] ">Assignee:</h1>
+            <h2 class="text-xl font-bold">Fahim</h2>
         </div>
         <div>
-            <h1>Priority:</h1>
-            <h2>Fahim</h2>
+            <h1 class="font-normal text-[16px] text-[#64748B] ">Priority:</h1>
+            <h2 class="bg-red-300 w-20 py-1 inline-block text-center rounded-xl font-medium text-[16px]">High</h2>
         </div>
     </div>
-</section>
+</div>
+
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="my_modal_1" class="modal">
+ <div id="details">
+    
+ </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
 
 
