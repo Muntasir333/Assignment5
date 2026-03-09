@@ -117,7 +117,7 @@ const displayDetails =(issue)=>{
     </div>
     <div class="mb-6">${labelHTML}</div>
     <p class="font-normal text-[16px] text-[#64748B] mb-6">${issue.description}</p>
-    <div class="grid grid-cols-2 items-center bg-[#F8FAFC] w-[636px] h-[81px] p-4">
+    <div class="grid grid-cols-2 items-center bg-[#F8FAFC] W-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl p-4 sm:p-6">
         <div>
             <h1 class="font-normal text-[16px] text-[#64748B] ">Assignee:</h1>
             <h2 class="text-xl font-bold">${issue.assignee}</h2>

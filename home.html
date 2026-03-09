@@ -18,13 +18,13 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<header class="bg-white w-full h-[78px] flex justify-between px-20">
+<header class="bg-white w-full h-[78px] flex flex-col sm:flex-row justify-between px-20">
 <div class="flex gap-4 text-left items-center">
 <img class="w-9 h-[37px]" src="./assets/github-logo.png">
 <h2 class="font-semibold text-2xl">GitHub Issues Tracker</h2>
 </div>
 
-
+ 
 <div class="flex items-center gap-4">
 <div class="join">
   <div>
@@ -41,22 +41,22 @@
 
 <body class="bg-[#F8FAFC]">
 
-<section class="button w-[1300px] h-[98px] mx-auto bg-white mt-[60px] flex items-center gap-4 px-6 rounded-xl">
-<button id="all" onclick="toggle('all')" class="btn btn-primary w-[120px] h-10">All</button>
-<button id="open" onclick="toggle('open')" class="btn btn-outline w-[120px] h-10">Open</button>
-<button id="closed" onclick="toggle('closed')" class="btn btn-outline w-[120px] h-10">Closed</button>
+<section  class="count max-w-[1300px] w-full h-auto mx-auto bg-white mt-4 flex flex-col sm:flex-row items-center gap-4 p-6 rounded-xl ">
+<button id="all" onclick="toggle('all')" class="btn btn-primary max-w-[120px] h-10">All</button>
+<button id="open" onclick="toggle('open')" class="btn btn-outline max-w-[120px] h-10">Open</button>
+<button id="closed" onclick="toggle('closed')" class="btn btn-outline max-w-[120px] h-10">Closed</button>
 </section>
 
-<section class="count w-[1300px] h-[98px] mx-auto bg-white mt-4 flex items-center gap-4 px-6 rounded-xl ">
+<section class="count max-w-[1300px] w-full h-auto mx-auto bg-white mt-4 flex flex-col md:flex-row md:items-center gap-4 md:px-6 py-4 rounded-xl ">
 <div class="flex justify-between w-full">
-    <div class="flex gap-2 items-center">
+    <div class="flex gap-2 items-start md:items-center w-full md:w-auto">
     <img class="w-8 h-8" src="./assets/Aperture.png">
     <div>
         <h2 id="num" class="font-semibold text-xl">0 Issues</h2>
         <p class="font-normal text-[16px] text-[#64748B]">Track and manage your project issues</p>
     </div>
     </div>
-    <div class="flex gap-2">
+    <div class="flex gap-4 w-full md:w-auto justify-start md:justify-end">
     <div class="flex gap-1 items-center">
         <img src="./assets/Ellipse 2.png"><h2>Open</h2>
     </div>
@@ -67,10 +67,10 @@
 </div>
 </section>
 
-<section  class="w-[1300px] mx-auto p-20  bg-[#F8FAFC] shadow-xl ">
+<section  class="max-w-[1300px] mx-auto p-20  bg-[#F8FAFC] shadow-xl ">
 <div id="loading-spinner" class="col-span-4 flex justify-center items-center" style="display:none"><span class="loading loading-spinner loading-xl"></span></div>
 
-<div id="card-Container" class="grid grid-cols-4 gap-6">
+<div id="card-Container" class="grid grid-cols-1 sm:grid-cols-4 gap-6">
 
 </div>
 
@@ -81,7 +81,7 @@
 <!-- Open the modal using ID.showModal() method -->
 <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
 <dialog id="my_modal_1" class="modal">
- <div class="modal-box min-w-[700px] min-h-[415px] p-8">
+ <div class="modal-box W-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl p-4 sm:p-6">
     <div id="details"></div>
 
     <div class="modal-action">
